@@ -1,0 +1,3 @@
+{"id": "decision-and-step", "input": "Ana: Should we ship Friday?\nBen: Yes, Friday works.\nAna: Great, I'll write the release notes by Thursday.", "expect": ["Lists the decision to ship Friday", "Lists release notes as a next step owned by Ana, due Thursday", "Has no open questions section"]}
+{"id": "open-question", "input": "Cam: Do we need a new database for this?\nDee: Not sure, I'll check with the team.\nCam: Thanks.", "expect": ["Lists the database question as open, owned by Dee", "Has no decisions section", "Drops the thanks"]}
+{"id": "superseded", "input": "Eli: Let's meet Tuesday.\nFay: Tuesday's out for me, how about Wednesday?\nEli: Wednesday it is.", "expect": ["Lists the meeting as Wednesday", "Does not list Tuesday as a decision"]}
